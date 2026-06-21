@@ -2,7 +2,7 @@
 
 **Estudiante:** Enmanuel Feliz Soto | **Matrícula:** 2025-1402  
 **Institución:** Instituto Tecnológico de Las Américas (ITLA)  
-**Curso:** Seguridad en Redes | **Sección:** 2-1C  
+**Curso:** Seguridad en Redes | **Sección:** 5 - Lunes  
 **Docente:** Jonathan Esteban Rondón Corniel
 
 ---
@@ -34,28 +34,27 @@ Combina la flexibilidad de GRE (multiprotocolo, multicast) con la seguridad de I
 
 | Router | Rol | IP WAN | Interfaz WAN | IP LAN | Interfaz LAN |
 |--------|-----|--------|--------------|--------|--------------|
-| R1-S1 | Peer 1 / Iniciador | 20.25.3.2 | Ethernet0/0 | 10.14.12.0.1/24 | **Ethernet0/3** |
-| R4-S2 | Peer 2 / Respondedor | 20.25.3.6 | Ethernet0/1 | 10.14.22.0.1/24 | Ethernet0/0 |
+| ISP | ENLACE / INTERMEDIARIO | 20.25.1.2 | Ethernet0/0 | -- | -- |
+| R3 | Peer 1 / INICIADOR | 20.25.2.6 | Ethernet0/0 | 30.30.30.1/24 | Ethernet0/1 |
 
 ### ISP
 
-| Interfaz ISP | IP | Descripción |
-|-------------|-----|-------------|
-| Ethernet0/0 | 20.25.3.1/30 | Link to R1-S1 |
-| Ethernet0/1 | 20.25.3.5/30 | Link to R4-S2 |
+| **Interfaz ISP** | **IP** | **Descripción** | | **Rol** |
+|-------------|-----|-------------|-------------|---------|
+| Ethernet0/0 | 20.25.1.1/30 | Link to R1-S1 | | **RESPONDEDOR** |
 
 ### Dirección Túnel
 | Endpoint | IP Tunnel |
 |----------|-----------|
-| R1-S1 Tunnel0 | 14.0.2.5/30/30 |
-| R4-S2 Tunnel0 | 14.0.2.6/30/30 |
+| R3 Tunnel0 | 14.2.10.1/30 |
+| ISP Tunnel0 | 14.2.10.2/30 |
 
 ---
 
 ## ⚙️ Configuración
 
 El script completo de configuración se encuentra en:  
-📄 [`Lab03_GRE_sobre_IPSec_IKEv1.txt`](./Lab03_GRE_sobre_IPSec_IKEv1.txt)
+📄 [`EnmanuelFelizSoto_2025-1402_GRE_sobre_IPSec_IKEv1_P3.txt`](./EnmanuelFelizSoto_2025-1402_GRE_sobre_IPSec_IKEv1_P3.txt)
 
 ### Parámetros IKE/IPSec
 
@@ -93,7 +92,7 @@ show ip interface brief
 
 ### 3. Prueba de conectividad
 ```
-ping 10.14.22.10 source 10.14.12.2
+ping 14.2.10.1 source 14.2.10.2 o 30.30.30.10
 ```
 
 ---
@@ -110,7 +109,7 @@ ping 10.14.22.10 source 10.14.12.2
 
 > 📸 **[INSERTAR CAPTURA: ping exitoso]**
 
-<!-- Captura del ping source 10.14.12.0/24 -->
+<!-- Captura del ping source 30.30.30.10 -->
 
 ---
 
@@ -130,7 +129,7 @@ ping 10.14.22.10 source 10.14.12.2
 |---------|--------|
 | Repositorio Principal | [Enmafs/NetSec](https://github.com/Enmafs/NetSec) |
 | Script de configuración | [`Lab03_GRE_sobre_IPSec_IKEv1.txt`](./Lab03_GRE_sobre_IPSec_IKEv1.txt) |
-| Video demostración | 🎬 **[PENDIENTE — agregar link de YouTube]** |
+| Video demostración | 🎬 [Aquí](https://youtu.be/VRtaDZReCvE) |
 
 ---
 
