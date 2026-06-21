@@ -128,7 +128,7 @@ ping 14.2.10.1 source 14.2.10.2 o 30.30.30.10
 | Recurso | Enlace |
 |---------|--------|
 | Repositorio Principal | [Enmafs/NetSec](https://github.com/Enmafs/NetSec) |
-| Script de configuración | [`Lab03_GRE_sobre_IPSec_IKEv1.txt`](./Lab03_GRE_sobre_IPSec_IKEv1.txt) |
+| Script de configuración | [`EnmanuelFelizSoto_2025-1402_GRE_sobre_IPSec_IKEv1_P3.txt`](./EnmanuelFelizSoto_2025-1402_GRE_sobre_IPSec_IKEv1_P3.txt) |
 | Video demostración | 🎬 [Aquí](https://youtu.be/VRtaDZReCvE) |
 
 ---
