@@ -23,7 +23,8 @@ Combina la flexibilidad de GRE (multiprotocolo, multicast) con la seguridad de I
 
 ## 🗺️ Topología
 
-> 📸 <img width="1191" height="647" alt="Captura de pantalla 2026-06-24 120545" src="https://github.com/user-attachments/assets/ff86a133-aefb-41d7-bdd0-2c092fba26e2" />
+> 📸 <img width="1472" height="805" alt="Captura de pantalla 2026-06-21 154657" src="https://github.com/user-attachments/assets/5da73313-e02b-42d6-94ed-99fac3af5120" />
+
 
 
 <!-- Coloca aquí el screenshot de PNetLab con la topología del Lab 03 -->
