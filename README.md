@@ -23,7 +23,8 @@ Combina la flexibilidad de GRE (multiprotocolo, multicast) con la seguridad de I
 
 ## 🗺️ Topología
 
-> 📸 **[INSERTAR CAPTURA DE TOPOLOGÍA AQUÍ]**
+> 📸 <img width="1191" height="647" alt="Captura de pantalla 2026-06-24 120545" src="https://github.com/user-attachments/assets/ff86a133-aefb-41d7-bdd0-2c092fba26e2" />
+
 
 <!-- Coloca aquí el screenshot de PNetLab con la topología del Lab 03 -->
 
@@ -99,15 +100,17 @@ ping 14.2.10.1 source 14.2.10.2 o 30.30.30.10
 
 ## 📸 Capturas de Verificación
 
-> 📸 **[INSERTAR CAPTURA: show crypto isakmp sa]**
+> 📸 <img width="624" height="84" alt="image" src="https://github.com/user-attachments/assets/0cc70112-fbfe-4774-b77d-029fc1ceb154" />
 
 <!-- Captura mostrando el estado QM_IDLE / ESTABLISHED -->
 
-> 📸 **[INSERTAR CAPTURA: show crypto ipsec sa]**
+> 📸 <img width="562" height="335" alt="image" src="https://github.com/user-attachments/assets/fa22c4f8-2167-4648-93ba-946fb06a2a82" />
+
 
 <!-- Captura mostrando pkts encaps/decaps incrementando -->
 
-> 📸 **[INSERTAR CAPTURA: ping exitoso]**
+> 📸 <img width="633" height="452" alt="image" src="https://github.com/user-attachments/assets/1f0483a3-a557-4648-93e1-edf82b90afa9" />
+
 
 <!-- Captura del ping source 30.30.30.10 -->
 
